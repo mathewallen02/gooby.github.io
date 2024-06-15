@@ -1,10 +1,9 @@
 // messages.js
 const messages = [
     "I love you",
-    "Welcome to the new Website!",
-    "Have fun in Texas, I love you",
+    "Welcome to your website!",
+    "Have fun in Texas, I love you!",
     "Teddie and I miss you!",
-    "Hi",
     // Add more messages as needed
 ];
 
