@@ -6,38 +6,104 @@ body {
     background-color: #f9f9f9;
     color: #333;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     text-align: center;
+    overflow: hidden; /* To hide elements that fall off the screen */
 }
 
-/* Header Styles */
-h1 {
+/* Date Styles */
+#current-date {
     color: #ff69b4;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-/* Message Styles */
-#message-of-the-day {
-    font-size: 1.5rem;
+/* Letter Container Styles */
+#letter-container {
+    position: relative;
+}
+
+#closed-letter {
+    width: 100px;
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Message Box Styles */
+#message-box {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: 0 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    position: relative;
+    margin-top: -70px; /* Adjust this value to move the message box closer to the date */
+}
+
+#message-of-the-day {
+    font-size: 1.5rem;
+}
+
+/* Countdown Styles */
+#countdown {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #666;
+}
+
+/* Falling Elements */
+#falling-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure falling elements are behind other content */
+    pointer-events: none; /* To make sure elements do not interfere with clicks */
+    overflow: hidden;
+}
+
+.falling {
+    position: absolute;
+    top: -50px;
+    opacity: 0.7;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
-    h1 {
+    #current-date {
         font-size: 2rem;
     }
     #message-of-the-day {
         font-size: 1.2rem;
         padding: 15px;
+    }
+    #message-box {
+        margin-top: -50px; /* Adjust for mobile view */
     }
 }
