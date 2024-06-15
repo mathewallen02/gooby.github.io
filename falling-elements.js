@@ -1,5 +1,11 @@
 // falling-elements.js
+
+const maxHearts = 15; // Maximum number of hearts at a time
+let activeHearts = 0; // Counter for active hearts
+
 function createFallingElement(src, size) {
+    if (activeHearts >= maxHearts) return; // Do not create more if limit is reached
+
     const element = document.createElement('img');
     element.src = `images/${src}`;
     element.className = 'falling';
@@ -7,10 +13,17 @@ function createFallingElement(src, size) {
     element.style.left = Math.random() * window.innerWidth + 'px';
     element.style.animationDuration = (5 + Math.random() * 5) + 's';
     element.style.animationDelay = Math.random() * 5 + 's';
-    document.getElementById('falling-elements').appendChild(element);
+
+    element.addEventListener('animationstart', function() {
+        activeHearts++; // Increment counter when animation starts
+    });
+
     element.addEventListener('animationend', function() {
         element.remove();
+        activeHearts--; // Decrement counter when animation ends
     });
+
+    document.getElementById('falling-elements').appendChild(element);
 }
 
 function createFallingElements() {
@@ -19,7 +32,7 @@ function createFallingElements() {
     setInterval(() => {
         const size = sizes[Math.floor(Math.random() * sizes.length)];
         createFallingElement(src, size);
-    }, 1000); // Increased frequency
+    }, 1000); // Adjust frequency as needed
 }
 
 // Start creating elements immediately
