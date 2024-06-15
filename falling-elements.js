@@ -1,7 +1,7 @@
 // falling-elements.js
 function createFallingElement(src, size) {
     const element = document.createElement('img');
-    element.src = src;
+    element.src = `images/${src}`;
     element.className = 'falling';
     element.style.width = size + 'px';
     element.style.left = Math.random() * window.innerWidth + 'px';
