@@ -1,10 +1,6 @@
 // messages.js
 const messages = [
-    "Hi Gooby",
-    "Welcome to your new website!",
-    "Have fun in Texas, I love you so much",
-    "Teddie and I miss you!",
-    "Have a good first day at work!, I know you'll do great :)"
+    "Elden Ring Time! See you in 3 years :)"
     // Add more messages as needed
 ];
 
