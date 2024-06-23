@@ -1,6 +1,6 @@
 // messages.js
 const messages = [
-    "Elden Ring Time! See you in 3 years :)"
+    "Fall guy day!"
     // Add more messages as needed
 ];
 
