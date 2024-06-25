@@ -1,6 +1,8 @@
 // messages.js
 const messages = [
-    "Fall guy day!"
+    "You're my favorite person",
+    "I miss you more every day", 
+    "Teddie says Hi!"
     // Add more messages as needed
 ];
 
