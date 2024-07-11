@@ -1,7 +1,6 @@
 // messages.js
 const messages = [
-    "I'll fight the hurricane for you :)",
-    "You are the prettiest person in the world"
+    "Have a good day at work Gooby"
     // Add more messages as needed
 ];
 
