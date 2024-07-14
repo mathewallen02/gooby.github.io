@@ -1,6 +1,6 @@
 // messages.js
 const messages = [
-    "Tobi and i miss you very very much"
+    "Happy Gooby day, its a new holiday I made up called gooby day"
     // Add more messages as needed
 ];
 
@@ -26,7 +26,7 @@ function startCountdown() {
     function updateCountdown() {
         const now = new Date();
         const nextMidnight = new Date(now);
-        nextMidnight.setHours(24, 0, 0, 0); // Set to the next midnight
+        nextMidnight.setHours(3, 0, 0, 0); // Set to the next midnight
 
         const timeRemaining = nextMidnight - now;
         const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
