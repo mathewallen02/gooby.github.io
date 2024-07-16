@@ -1,6 +1,6 @@
 // messages.js
 const messages = [
-    "Wanna watch Secret life of Pets?"
+    "Hi Gooby, I couldn't think of a clever message so I'm just gonna say I love you <3"
     // Add more messages as needed
 ];
 
