@@ -1,6 +1,6 @@
 // messages.js
 const messages = [
-    "Secret Life of Pets Day!"
+    "Going to Rolla! I can't wait for you to be there with me <3"
     // Add more messages as needed
 ];
 
