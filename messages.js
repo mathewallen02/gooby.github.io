@@ -1,6 +1,6 @@
 // messages.js
 const messages = [
-    "Going to Rolla! I can't wait for you to be there with me <3"
+    "Day 2 in Rolla! I miss you so much and I can't wait for you to be here with me. I love you Gooby"
     // Add more messages as needed
 ];
 
@@ -26,7 +26,7 @@ function startCountdown() {
     function updateCountdown() {
         const now = new Date();
         const nextMidnight = new Date(now);
-        nextMidnight.setHours(24, 0, 0, 0); // Set to the next midnight
+        nextMidnight.setHours(10, 0, 0, 0); // Set to the next midnight
 
         const timeRemaining = nextMidnight - now;
         const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
