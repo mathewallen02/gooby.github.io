@@ -1,6 +1,6 @@
 // messages.js
 const messages = [
-    "Day 2 in Rolla! I miss you so much and I can't wait for you to be here with me. I love you Gooby"
+    "Hello Gangster Gooby, it is I, Evilman. I am here to tell you that I love you"
     // Add more messages as needed
 ];
 
