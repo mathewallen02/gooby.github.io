@@ -1,6 +1,6 @@
 // messages.js
 const messages = [
-    "Hello Gangster Gooby, it is I, Evilman. I am here to tell you that I love you"
+    "I'll blow up the eyelash place for you"
     // Add more messages as needed
 ];
 
