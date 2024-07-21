@@ -1,6 +1,6 @@
 // messages.js
 const messages = [
-    "Going to Rolla! I can't wait for you to be there with me <3"
+    "I'll blow up the eyelash place for you"
     // Add more messages as needed
 ];
 
