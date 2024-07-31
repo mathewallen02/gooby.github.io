@@ -1,6 +1,6 @@
 // messages.js
 const messages = [
-    "I love you 3 Trillion percent"
+    "You are the light of my life"
     // Add more messages as needed
 ];
 
