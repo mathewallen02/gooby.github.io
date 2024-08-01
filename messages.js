@@ -1,6 +1,6 @@
 // messages.js
 const messages = [
-    "You are the light of my life"
+    "Happy girlfriend day <3"
     // Add more messages as needed
 ];
 
@@ -26,7 +26,7 @@ function startCountdown() {
     function updateCountdown() {
         const now = new Date();
         const nextMidnight = new Date(now);
-        nextMidnight.setHours(24, 0, 0, 0); // Set to the next midnight
+        nextMidnight.setHours(12, 0, 0, 0); // Set to the next midnight
 
         const timeRemaining = nextMidnight - now;
         const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
