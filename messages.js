@@ -1,6 +1,6 @@
 // messages.js
 const messages = [
-    "Going back to O'fallon I love you so much"
+    "Only 7 more days until we see eachother <3"
     // Add more messages as needed
 ];
 
