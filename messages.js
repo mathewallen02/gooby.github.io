@@ -1,6 +1,10 @@
 // messages.js
 const messages = [
+<<<<<<< HEAD
     "Will you be the Milk to my Mocha?"
+=======
+    "Only 7 more days until we see eachother <3"
+>>>>>>> 36e5dfe9c9bd2a1506a641714c7e2b1a4b7db095
     // Add more messages as needed
 ];
 
