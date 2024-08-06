@@ -1,6 +1,6 @@
 // messages.js
 const messages = [
-    "Heading to KC, I miss you so much and I'm always thinking about you"
+    "Will you be the Milk to my Mocha?"
     // Add more messages as needed
 ];
 
