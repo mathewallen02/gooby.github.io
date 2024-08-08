@@ -1,6 +1,6 @@
 // messages.js
 const messages = [
-    "Will you be the Milk to my Mocha?"
+    "Good Luck on your presentation, you're gonna do great!"
 ];
 
 // Function to get today's message
